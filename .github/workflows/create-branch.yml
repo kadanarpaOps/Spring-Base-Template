@@ -26,4 +26,10 @@ jobs:
       branch-type: ${{ inputs.branch-type }}
       allowed-jira-types: 'Feature'
       allowed-jira-statuses: 'New,In Progress'
-    secrets: inherit
+    secrets:
+      BOT_CLIENT_ID: ${{ secrets.BOT_CLIENT_ID }}
+      BOT_APP_PRIVATE_KEY: ${{ secrets.BOT_APP_PRIVATE_KEY }}
+      JIRA_KEY: ${{ secrets.JIRA_KEY }}
+      JIRA_URL: ${{ secrets.JIRA_URL }}
+      JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+      JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}

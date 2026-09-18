@@ -16,4 +16,13 @@ jobs:
       sonar-quality-gate-wait: true
       allowed-jira-types: 'Story'
       allowed-jira-statuses: 'New,In Progress'
-    secrets: inherit
+    secrets:
+      JIRA_KEY: ${{ secrets.JIRA_KEY }}
+      JIRA_URL: ${{ secrets.JIRA_URL }}
+      JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+      JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+      PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+      SONAR_URL: ${{ secrets.SONAR_URL }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
