@@ -1,4 +1,4 @@
-name: Update Environment Properties
+name: Update ENV
 on:
   workflow_dispatch:
     inputs:

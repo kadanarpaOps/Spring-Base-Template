@@ -1,4 +1,4 @@
-name: Teardown Branch on Environment
+name: Teardown Branch
 on:
   workflow_dispatch:
     inputs:
